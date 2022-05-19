@@ -13,7 +13,6 @@ drawings:
   persist: false
 title: Welcome to Scaling DLT's
 ---
-
 # Scaling DLT's
 
 A short introduction for the *Blockchain Technology* Seminar SS22
@@ -99,6 +98,34 @@ Any ideas?
 ---
 layout: two-cols
 ---
+<v-click>
+
+# Layer-1
+
+</v-click>
+
+
+- increasing block size
+- increase consensus efficiency
+- parallelization / sharding
+
+::right::
+
+<v-after>
+
+# Layer-2
+
+</v-after>
+
+- nesting blockchains
+- state channels
+- sidechains
+- bundeling / rollups
+
+---
+layout: two-cols
+---
+
 # Layer-1
 
 - main DLT network protocol itself
@@ -106,7 +133,6 @@ layout: two-cols
 - e.g. Bitcoin, Ethereum, Avalanche,...
 
 ::right::
-
 # Layer-2
 
 - protocols sitting on top of the L1 to increase scalability or add functionality
@@ -138,9 +164,12 @@ layout: section
 - increasing block size?
 - principal-agent problem
 
+<br>
+<br>
+
 <v-click>
 
-### *Conduct transactions off the Bitcoin blockchain itself!*
+### *Deal with transactions off the Bitcoin blockchain itself!*
 
 </v-click>
 
@@ -259,6 +288,11 @@ image: ./sharding_eth.png
 ---
 
 # ❄️ Avalanche - Finding Consensus
+
+---
+layout: statement
+---
+# Questions?
 
 ---
 
