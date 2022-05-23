@@ -292,7 +292,7 @@ layout: contained-image-right
 image: ./eth_colorful.png
 ---
 
-## 🏃🏻 Primer
+## 🏃🏻 Ethereum and Bitcoin
 
 - inspired by Bitcoins *"underlying blockchain technology as a tool of distributed consensus"*
 - the Ethereum virtual machine (EVM) is turing-complete
@@ -302,9 +302,7 @@ image: ./eth_colorful.png
 
 ---
 
-## 🏃🏻 Primer
-### History
-
+## 🏃🏻 History
 ```mermaid
 gantt
     title Important Events for Scaling Ethereum
@@ -320,7 +318,7 @@ gantt
 ```
 
 
-### Summary
+## Summary
 - turing-complete EVM enables pogrammable money
 - scaling is forced by design
 - after multiple pushbacks the first step of the scaling vision went live (*Beacon Chain*)
@@ -352,6 +350,33 @@ gantt
 -->
 
 ---
+
+## 🔭 The Ethereum Vision
+
+<div class="container mx-auto flex flex-row justify-center">
+    <img src="/ethereum_vision.png" class="my-3 h-60 rounded"/>
+</div>
+
+- main goals: **Scalability**, Security & Sustainibility
+- [Beacon Chain](https://ethereum.org/en/upgrades/beacon-chain/) coordinates shards & stakers
+- [The Merge](https://ethereum.org/en/upgrades/merge/) will connect the Ethereum mainnet with the Beacon Chain POS system
+- [Shard Chains](https://ethereum.org/en/upgrades/shard-chains/) will complete current scaling efforts
+  * multi-phase upgrade
+  * enable layer-2 solutions to offer low fees with the security of Ethereum
+
+<!-- 
+- **merge** will end POW on Ethereum
+-->
+
+
+<style>
+  h2 {
+    text-align: center;
+  }
+</style>
+
+
+---
 layout: contained-image-right
 image: ./sharding_eth.png
 ---
@@ -378,6 +403,7 @@ layout: statement
 
 # Enter the rabbit hole 🕳 🐇
 - [DeFi Developer Roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)
+- [Ethereum Upgrades](https://ethereum.org/en/upgrades/)
 
 
 ---
