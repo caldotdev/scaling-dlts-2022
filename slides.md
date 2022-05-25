@@ -46,7 +46,9 @@ h1 {
 </style>
 
 ---
-
+layout: contained-image-right
+image: ./blockchain_trilemma.png
+---
 # Motivation
 
 <br>
@@ -270,7 +272,7 @@ layout: contained-image-right
 image: ./eth_colorful.png
 ---
 
-## 🏃🏻 Primer
+# 🏃🏻 Primer
 
 - public
 - permissionless
@@ -377,19 +379,70 @@ gantt
 
 
 ---
-layout: contained-image-right
+layout: image
 image: ./sharding_eth.png
 ---
 
-## 🏃🏻 Sharding
+# 🏃🏻 Sharding
 
 ---
-layout: contained-image-right
+
+# 🏃🏻 Sharding
+- related to horizontal data partition
+- shared-nothing architecture
+	* shards are autonomous
+  	* memory & storage is not shared between nodes 
+- adds complexity & potential failure points ⚠️
+
+
+<br>
+<br>
+<br>
+
+
+### When to shard ? 🧐
+
+- application data outgrows capacity of single database node
+- slowed response times due to volume of read/writes to single node
+- network bandwith required is greater than the bandwith available to a single node
+
+<!--
+![illustrations](/horizontal_partitioning.png)
+-->
+
+---
+
+commonly used: 
+
+<img src="/sharding_implementations.png" class=" rounded" />
+
+[Source](https://en.wikipedia.org/wiki/Shard_(database_architecture)#Implementations)
+
+---
+# 🏃🏻 Why sharding is great for Ethereum
+
+
+
+---
+
+# 🏃🏻 Sharding Roadmap
+
+
+---
+# 🏃🏻 Quick Recap
+
+---
+layout: image
 image: ./sharding_eth.png
 ---
 
-## 🏃🏻 Rollups
+# 🏃🏻 Rollups
 
+---
+
+
+---
+# Ethereum Scaling tl;dr
 ---
 
 # ❄️ Avalanche - Finding Consensus
@@ -411,6 +464,7 @@ layout: statement
 # Sources
 - [Ethereum Illustrations](https://ethereum.org/en/assets/#illustrations)
 - [Avalanche Illustrations](https://support.avax.network/en/articles/4132288-ava-labs-and-avalanche-press-kit-and-brand-assets)
+- [Database Sharding Primer by Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
 
 ---
 layout: center
