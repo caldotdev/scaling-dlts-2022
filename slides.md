@@ -419,30 +419,51 @@ commonly used:
 [Source](https://en.wikipedia.org/wiki/Shard_(database_architecture)#Implementations)
 
 ---
-# 🏃🏻 Why sharding is great for Ethereum
-
-
-
----
 
 # 🏃🏻 Sharding Roadmap
+Ethereum 2.0
+- **Phase 0:** POS [beacon chain](https://ethereum.org/en/upgrades/beacon-chain/) without shards (shipped in 2020 🚀)
+  * beacon chain contains logic to secure and sync shards
+  * also coordinates stakers in the network; assignment of shards 
+- **Phase 1:** Basic sharding without EVM (planned for 2023 🗓)
 
+<v-click>
+
+- *Phase 2: EVM state transition function*
+- *Phase 3: Light client state protocol*
+- *Phase 4: Cross-shard transactions*
+- *Phase 5: Tight coupling with main chain security*
+- *Phase 6: Super-quadratic or exponential sharding* **Recursively, shards within shards within shards…**
+- **Ethereum 3.0**
+
+[learn more](https://eth.wiki/sharding/sharding-roadmap)
+
+</v-click>
+
+<!--
+# beacon chain
+- contains logic for keeping shards secure and synced
+- assigns stakers to shards they need to work on
+- facilitates cross-shard communications
+
+# Phase 1
+- Blobs are collated in shards (w/o transactions)
+- transactions need EVM
+-->
 
 ---
 # 🏃🏻 Quick Recap
 
----
-layout: image
-image: ./sharding_eth.png
----
+content...
 
+---
 # 🏃🏻 Rollups
-
----
 
 
 ---
 # Ethereum Scaling tl;dr
+
+
 ---
 
 # ❄️ Avalanche - Finding Consensus
@@ -456,6 +477,7 @@ layout: statement
 
 # Enter the rabbit hole 🕳 🐇
 - [DeFi Developer Roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)
+- [How does Ethereum work, anyway?](https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway)
 - [Ethereum Upgrades](https://ethereum.org/en/upgrades/)
 
 
