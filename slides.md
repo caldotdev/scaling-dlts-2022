@@ -53,6 +53,7 @@ image: ./blockchain_trilemma.png
 
 <br>
 
+
 ![DLT Trilemma](/blockchain_trilemma.png)
 
 <style>
@@ -62,6 +63,24 @@ img {
 }
 
 </style>
+
+<!-- 
+# Traditional Blockchains
+- rely on  every participant running a full node
+- verification of transactions on all nodes
+- decentralized & secure but **not** really scalable
+- Bitcoin, Litecoin, pre-sharding Eth
+
+# High-TPS chains
+- small node number
+- user have to trust those nodes
+- scalable & secure
+
+# Multi-Chain ecosystem
+- different applications on different chains
+- communication between chains
+- attacker could break consensus in one chain and damage other chains
+-->
 
 ---
 
@@ -157,7 +176,6 @@ layout: section
 ---
 
 ## ⚡️ Bitcoin Scaling Problem
-
 - huge impact on the network if every node must know about every single transaction
 - Visa's 47,000 peak tps vs. &lt;7 tps <
 - 1MB block limit
@@ -417,9 +435,26 @@ commonly used:
 <img src="/sharding_implementations.png" class=" rounded" />
 
 [Source](https://en.wikipedia.org/wiki/Shard_(database_architecture)#Implementations)
+---
+# 🏃🏻 Sharding through Random Sampling
+
+<br>
+<div class="container mx-auto flex flex-row justify-center">
+  <img src="/sharding_committees.png" class="bg-white p-2 rounded" />
+</div>
+<br>
+
+- randomly split verification work
+- shuffle validator list and assign **committees** of size n to verify a block
+- each validator publishes a signature upon block validation
+- the network **only needs to verify the signatures** - less work
 
 ---
+# 🏃🏻 Quadratic Sharding
+include?..
 
+
+---
 # 🏃🏻 Sharding Roadmap
 Ethereum 2.0
 - **Phase 0:** POS [beacon chain](https://ethereum.org/en/upgrades/beacon-chain/) without shards (shipped in 2020 🚀)
@@ -479,6 +514,8 @@ layout: statement
 - [DeFi Developer Roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)
 - [How does Ethereum work, anyway?](https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway)
 - [Ethereum Upgrades](https://ethereum.org/en/upgrades/)
+- [Vitalik on 10.000x scaling Ethereum](https://www.youtube.com/watch?v=UuMOQAVpI2c)
+
 
 
 ---
