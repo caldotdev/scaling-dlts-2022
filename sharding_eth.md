@@ -152,10 +152,29 @@ Ethereum 2.0
 # Phase 1
 - Blobs are collated in shards (w/o transactions)
 - transactions need EVM
+
+# Do shards need code execution?
+3 options presented by vitalik
+- state execution not needed
+- have some execution shards
+- wait for zkSNARKs and revisit the problem
 -->
 
 
 ---
 # 🏃🏻 Quick Recap
 
-content...
+_i.g.: splitting a database horizontally_
+- part multi-phase upgrade to improve scalability and capacity
+- for now shard chains provide _just_  storage layers - _you will learn how to use that in a clever way in a second 😏_
+- committees of random validators approve blocks
+- validation results of several committees are combined in a way that only requires checking the signatures of all validators
+  - attestation aggregation
+  - BLS signatures / zkSNARKs
+- **not only** a matter of **scaling** ⇢ improves security & decentralization of the network
+
+<v-click>
+
+### Any questions or comments?
+
+</v-click>
