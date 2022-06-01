@@ -26,7 +26,7 @@ image: ./img/eth_colorful.png
 - consensus mechanism: **Proof-Of-Work**
 - enables **Smart Contracts** using
 	* [Solidity](https://docs.soliditylang.org/en/v0.8.14/)
-    * [Vyper](https://vyper.readthedocs.io/en/stable/)
+  * [Vyper](https://vyper.readthedocs.io/en/stable/)
 - no private transactions
 - used for
 	* ETH (native asset)
@@ -46,7 +46,7 @@ image: ./img/eth_colorful.png
 - the Ethereum virtual machine (EVM) is turing-complete
 - inherently designed to force implementation of scaling solutions by the [**"difficulty bomb"**](https://ethereum.org/en/glossary/#difficulty-bomb)
 	- transition to POS
-    - reduce changes of fork
+  - reduce changes of fork
 
 
 ---

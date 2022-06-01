@@ -12,7 +12,7 @@ image: ./img/sharding_eth.png
 - related to horizontal data partition
 - shared-nothing architecture
 	* shards are autonomous
-  	* memory & storage is not shared between nodes 
+  * memory & storage is not shared between nodes 
 - adds complexity & potential failure points ⚠️
 
 

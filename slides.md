@@ -54,6 +54,8 @@ layout: statement
 - [How does Ethereum work, anyway?](https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway)
 - [Ethereum Upgrades](https://ethereum.org/en/upgrades/)
 - [Vitalik on 10.000x scaling Ethereum](https://www.youtube.com/watch?v=UuMOQAVpI2c)
+- [Designing Ethereum | Vitalik Buterin](https://youtu.be/-R0j5AMUSzA)
+- [Staking on eth2](https://blog.ethereum.org/2019/11/27/validated-staking-on-eth2-0/)
 
 # Rollups
 - [zkSync](https://zksync.io/)
@@ -64,6 +66,7 @@ layout: statement
 - [Ethereum Illustrations](https://ethereum.org/en/assets/#illustrations)
 - [Avalanche Illustrations](https://support.avax.network/en/articles/4132288-ava-labs-and-avalanche-press-kit-and-brand-assets)
 - [Database Sharding Primer by Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
+- [Why sharding is great: demystifying the technical properties](https://vitalik.ca/general/2021/04/07/sharding.html)
 
 ---
 layout: center
