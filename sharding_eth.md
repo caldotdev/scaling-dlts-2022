@@ -83,7 +83,7 @@ commonly used:
 layout: statement
 ---
 
-How can we use the properties of attestations within a committee in a clever way?
+# How can we use the properties of attestations within a committee in a clever way?
 
 <!-- 
 Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert werden müssen.
@@ -162,11 +162,12 @@ Ethereum 2.0
 
 
 ---
+
 # 🏃🏻 Quick Recap
 
 _i.g.: splitting a database horizontally_
 - part multi-phase upgrade to improve scalability and capacity
-- for now shard chains provide _just_  storage layers - _you will learn how to use that in a clever way in a second 😏_
+- for now shard chains provide _just_  storage layers - _you will learn how to use that in a clever way in a second_ 😏
 - committees of random validators approve blocks
 - validation results of several committees are combined in a way that only requires checking the signatures of all validators
   - attestation aggregation

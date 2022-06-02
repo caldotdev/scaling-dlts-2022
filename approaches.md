@@ -1,5 +1,3 @@
----
-
 # Approaches
 
 <v-click>
