@@ -2,7 +2,7 @@
   "name": "slidev_presentations",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base=/scaling-dlts-2022/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
