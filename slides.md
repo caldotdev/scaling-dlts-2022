@@ -62,13 +62,23 @@ layout: statement
 - [Designing Ethereum | Vitalik Buterin](https://youtu.be/-R0j5AMUSzA)
 - [Staking on eth2](https://blog.ethereum.org/2019/11/27/validated-staking-on-eth2-0/)
 
-# Rollups
-- [zkSync](https://zksync.io/)
-- [starkware](https://starkware.co/)
+### Rollups
 - [An Incomplete Guide to Rollups | Vitalik Buterin](https://vitalik.ca/general/2021/01/05/rollup.html)
+- [SNARK vs. STARK](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
+- [STARK Paper](https://eprint.iacr.org/2018/046.pdf)
+- [starkware](https://starkware.co/)
+- [SNARK Paper](https://dl.acm.org/doi/10.1145/2090236.2090263)
+
+---
+
+# Enter the rabbit hole 🕳 🐇
+
+### Rollups
 - [Understanding PLONK | Vitalik Buterin](https://vitalik.ca/general/2019/09/22/plonk.html)
+- [zkSync](https://zksync.io/)
 - [Cairo](https://www.cairo-lang.org/docs/)
 - [Hardware Acceleration for zk Proofs](https://www.paradigm.xyz/2022/04/zk-hardware#why-do-zero-knowledge-proofs-matter)
+
 ---
 
 # Sources

@@ -1,5 +1,5 @@
 {
-  "name": "slidev_presentations",
+  "name": "scaling-dlts-2022",
   "private": true,
   "scripts": {
     "build": "slidev build --base=/scaling-dlts-2022/",

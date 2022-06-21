@@ -92,6 +92,41 @@ Instead of paying out the full amount to the challenger?
 
 # ⛓ zk Rollups
 
+includes an easily verifiable cryptographic **valididty** proof in every *batch*.
+
+- enable a party to prove knowledge about something while having **z**ero **k**nowledge about "the something"
+- rollups only inlcude validity proof
+- faster finality
+- currently there are two approaches to zk proofs
+
+
+<!-- 
+- nur validity proof: optimistic rollups brauchen die Transaktionsdaten um ggf. einen fraud proof zu überprüfen
+- finality: state direkt verifiziert, wenn der Rollup bei der main chain ankommt
+- "Bewiesen ist es ja schon"
+-->
+
+---
+
+# ⛓ zk Rollups
+
+### **S**calable **T**ransparent **A**rgument of **K**nowledge ⇢ **STARKs**
+- rely on hash functions ⇢ quantum resistant
+- don't require trusted set-up
+- larger proof size requires
+    * more time to verify
+    * higher gas fees (up to 24\%)
+
+<br/>
+
+### **S**uccinct **N**on-interactive **A**rgument of **K**nowledge ⇢ **SNARKs**
+
+- based on [elliptic curves](https://curves.ulfheim.net/)
+- currently the main approach of Ethereum using the [PLONK](https://vitalik.ca/general/2019/09/22/plonk.html) protocol
+- better developer support among other benefits
+
+[_read more about the differences & advantages_](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
+
 
 ---
 
