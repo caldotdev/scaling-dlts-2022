@@ -2,15 +2,13 @@
   "name": "slidev_presentations",
   "private": true,
   "scripts": {
-    "build": "slidev build --base=/blockchain_scaling/",
+    "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
   },
   "dependencies": {
     "@nuxt/kit": "3.0.0-rc.3",
     "@slidev/cli": "^0.31.4",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
     "slidev-theme-academic": "^1.0.0"
   },
   "devDependencies": {

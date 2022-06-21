@@ -84,6 +84,8 @@ class: text-center
 
 ## Thank you for your attention!
 
+The presentation is available at `https://calwritescode.github.io/blockchain_scaling/`
+
 <!--
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
 -->
