@@ -1,19 +1,24 @@
 ---
 theme: academic
 background: https://source.unsplash.com/collection/94734566/1920x1080
-class: 'text-center'
+class: text-center
 highlighter: shiki
-info: |
+info: >
   ## Scaling DLT's
+
   A short introduction for the *Blockchain Technology* Seminar SS22
 
-  Course website at [Uni Tübingen](http://ps.informatik.uni-tuebingen.de/teaching/ss22/blockchain/)
+
+  Course website at [Uni
+  Tübingen](http://ps.informatik.uni-tuebingen.de/teaching/ss22/blockchain/)
 title: Welcome to Scaling DLT's
 download: true
 ---
+
 # Scaling DLT's
 
 A short introduction for the *Blockchain Technology* Seminar SS22
+
 
 ---
 src: ./outline.md
@@ -59,7 +64,11 @@ layout: statement
 
 # Rollups
 - [zkSync](https://zksync.io/)
-
+- [starkware](https://starkware.co/)
+- [An Incomplete Guide to Rollups | Vitalik Buterin](https://vitalik.ca/general/2021/01/05/rollup.html)
+- [Understanding PLONK | Vitalik Buterin](https://vitalik.ca/general/2019/09/22/plonk.html)
+- [Cairo](https://www.cairo-lang.org/docs/)
+- [Hardware Acceleration for zk Proofs](https://www.paradigm.xyz/2022/04/zk-hardware#why-do-zero-knowledge-proofs-matter)
 ---
 
 # Sources
