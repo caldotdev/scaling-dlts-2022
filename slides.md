@@ -75,9 +75,14 @@ layout: statement
 
 ### Rollups
 - [Understanding PLONK | Vitalik Buterin](https://vitalik.ca/general/2019/09/22/plonk.html)
+- [lambda design ritual](https://electriccoin.co/blog/the-design-of-the-ceremony/)
 - [zkSync](https://zksync.io/)
 - [Cairo](https://www.cairo-lang.org/docs/)
 - [Hardware Acceleration for zk Proofs](https://www.paradigm.xyz/2022/04/zk-hardware#why-do-zero-knowledge-proofs-matter)
+
+### zkSNARKS
+- [Mathematics behind zkSNARKs](https://www.youtube.com/watch?v=iRQw2RpQAVc)
+- [ConsenSys Workshop](https://www.youtube.com/watch?v=Eva2lHFI_rI)
 
 ---
 

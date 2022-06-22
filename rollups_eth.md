@@ -127,10 +127,240 @@ includes an easily verifiable cryptographic **valididty** proof in every *batch*
 
 [_read more about the differences & advantages_](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 
+---
+
+# 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+- **S**uccinct
+    * message sizes are really small in comparison to the actual computation
+- **N**on-interactive
+    * setup phase and single message from prover to verifier
+    * anyone can verify without interacting anew
+- **AR**guments
+    * protection only against computationally limited provers
+    * computational soundness vs. perfect soundness
+- **K**nowledge
+    * impossible for prover to construct a proof w/o a witness
+    * e.g. address, path to Merkle-tree node,...
+
+<!-- 
+- ARguments: mit genug Rechenleistung kann jede public-Key Verschlüsselung gebrochen werden
+- vgl. Quantum security der Hash-Funktion von STARKs
+
+# Knowledge Stift Beispiel
+- du bist farbenblind
+- Zwei Stifte: rot - blau
+- ich kann beweisen, dass ich einen Unterschied erkennen kann, wenn du sie hinter dem Rücken tauschst
+- dafür **MUSS** ich wissen, welcher Stift welcher ist
+-->
 
 ---
 
-# ✨ Optimistic vs. zk ⛓
+# 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+four main ingredients:
+
+- encoding as polynomial problem
+- succinctness by random sampling
+- homomorphic encryption
+- zero knowledge
+
+---
+
+# 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+<br/>
+<br/>
+<br/>
+
+$$t(x) h(x)=w(x) v(x)$$
+
+<br/>
+<br/>
+<br/>
+
+## encoding as polynomial problem
+- program/data is compiled into quadratic equation of polynomials
+- equality only holds if the program is computed correctly
+- a **prover** wants to convince the **verifier** that said equality holds
+
+<!-- 
+program wird in quadratische Gleichung kompiliert $t(x) h(x)=w(x) v(x)$
+- Gleichheit gilt nur, wenn das Programm richtig berechnet wird
+- *prover* will den *verifier* überzeugen, dass diese Gleichheit gilt
+-->
+
+---
+
+# 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+<br/>
+<br/>
+<br/>
+
+$$t(s) h(s)=w(s) v(s)$$
+
+<br/>
+<br/>
+<br/>
+
+## succinctness by random sampling
+- verifier chooses a/multiple evaluation point $s$
+- therefore simplifying the problem fromm polynomial multiplication to
+    * simple multiplication
+    * equality check on numbers
+
+<!-- 
+*verifier* wählt einen evaluation point und reduziert damit das Problem zu einfacher Multiplikation und Gleichheits check auf nummern $t(s) h(s)=w(s) v(s)$
+- reduziert Beweis Größe und Zeit stark
+- 3 Punkte auf elliptic curve
+-->
+
+---
+
+# 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+<br/>
+<br/>
+<br/>
+
+$$E$$
+
+<br/>
+<br/>
+<br/>
+
+## homomorphic encryption
+- quasi homomorphic function $E$ is selected
+- allows the **prover** to compute $E(t(s)), \ldots$ withouth knowing $s$
+- only $E(s)$ and some other encrypted values are known
+
+<!-- 
+quasi homomorphische Funktion $E$ wird gewählt
+- Homomorphismus bildet Elemente aus einer Menge in andere Menge ab, ohne ihre Bilder hinsichtlich der Struktur ihres Verhaltens (Operationen) zu verändern
+- *prover* kann nun $E(t(s))$ berechnen ohne $s$ zu kennen
+-->
+
+---
+
+# 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+<br/>
+<br/>
+<br/>
+
+$$t(s) h(s) k=w(s) v(s) k$$
+
+<br/>
+<br/>
+
+## zero knowledge
+- **prover** permutes the encrypted values by multiplication with a number $k$
+- **verifier** can check if their _stucture_ is correct even _**withouth knowing the encoded values**_
+
+<br/>
+
+#### Handwavy Idea 👋🏻
+- checking $t(s) h(s)=w(s) v(s)$ is identical to checking $t(s) h(s) k=w(s) v(s) k$
+- with one important _**difference**_:
+    * checking $t(s) h(s) k=w(s) v(s) k$ only requires $t(s) h(s) k$ and $w(s) v(s) k$
+    * it's impossible to derive $t(s) h(s)$ or $w(s) v(s)$
+
+<!-- 
+*prover* permutiert die verschlüsselten Werte mit einer Zahl
+- damit kann *verifier* deren Struktur überprüfen ohne die verschlüsselten Werte zu kennen
+- Grobe Idee: $t(s) h(s)=w(s) v(s)$ überprüfen ist identisch mit Überprüfen von $t(s) h(s) k=w(s) v(s) k$
+- jedoch kann aus $t(s) h(s) k$,.. nicht $t(s) h(s)$ abgeleitet werden
+-->
+
+---
+
+# [🔏 A simple zk-SNARK example](https://consensys.net/blog/developers/introduction-to-zk-snarks/)
+
+A zk-SNARK consists of three algorithms
+
+- key `G`enerator
+    * takes secrect parameter `lambda` and program `C`
+    * returns publicly available _proving key_ `pk` and _verification key_ `vk`
+- `P`rover
+    * takes `pk`, public input `x` and private witness `w`
+    * returns a _proof_ `prf=P(pk, x, w)`
+- `V`erifier
+    * takes `vk`, `x` and `prf`
+    * `V(vk, x, prf)` returns `true` if proof is correct; `false` otherwise
+    
+ `V` returns `true` if prover knows a witness  satisfying `C(x, w) == true`
+
+<!-- 
+# `G`
+- keys müssen einmalig für gegebens `C` erstellt werden
+
+# `P`
+- prover kennt die witness
+- witness hat was mit dem Programm zu tun; erinnert euch an die Stifte
+
+# `lambda`
+- jeder mit Wissen über lambda kann falsche Beweise erstellen
+- Erstellung sehr wichtig
+- Design Ritual für lambda von zCash in Quellen
+-->
+
+---
+
+# [🔏 A simple zk-SNARK example](https://consensys.net/blog/developers/introduction-to-zk-snarks/)
+
+premise: _Alice and Bob use a zkSNARK, since Alice wants to proof her knowledge about a secret value._
+
+<br/>
+<br/>
+
+```js {1-3|5|6|7-9}
+function C(x, w) {
+    return ( sha256(w) == x );
+}
+
+(pk, vk) = G(C, lambda);
+prf = P(pk, H, s);
+result = V(vk, H, prf) ? 'Alice is a lier 🚫' : 'Alice knows the secret 🔓';
+
+'Alice knows the secret 🔓'
+```
+
+<!-- 
+- Bob erstellt den _proving key_ und den _verification key_ mit dem Generator
+- Alice darf auf keinen Fall lamda erfahren
+- Alice erstellt einen Beweis mit dem proof Algorithmus
+    * sie will beweisen, dass sie den Wert $s$ kennt, der gehashed $H$ ergibt
+- Alice zeigt Bob den Beweis
+    * er verifiziert den Beweis mit `V`
+- Alice war ehrlich und konnte Bob beweisen, dass sie $s$ kennt, ohne ihm $s$ zu sagen
+
+_vergebt mir für die letzte Zeile: offensichtlich kein gültiges JS_
+-->
+
+---
+
+# 👨🏻‍🏫 zkSNARK recap
+
+- based on elliptic curves
+- enables **verifiers** to check knowledge of **prover** without the need to reveal the secret
+    * $t(x) h(x)=w(x) v(x)$
+    * $t(s) h(s)=w(s) v(s)$
+    * $E(t(s)), \ldots$
+    * checking $t(s) h(s)=w(s) v(s)$ is identical to checking $t(s) h(s) k=w(s) v(s) k$
+- currently on the roadmap to be utilized by Ethereum
+- there are alternatives and plenty of different implementations (STARKs, PLONK,...)
+
+<!--
+- Verschlüsselung als quadratische Gleichung
+- evaluation points und damit einfache Multiplikation
+- quasi Homomorphismus und damit $E(t(s))$ berechnen ohne $s$ zu kennen
+- zufälliges $k$ erlaubt Überprüfung ohne die Möglichkeit "den wahren Wert" zu ermitteln
+-->
+
+---
+
+# Rollups: ✨ Optimistic vs. zk ⛓
 
 | **Property** | **Optimistic Rollups** | **zk Rollups** |
 |---|---|---|
