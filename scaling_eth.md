@@ -41,7 +41,7 @@ layout: contained-image-right
 image: ./img/eth_colorful.png
 ---
 
-## Ethereum and Bitcoin
+## Ethereum & Bitcoin
 
 - inspired by Bitcoins *"underlying blockchain technology as a tool of distributed consensus"*
 - the Ethereum virtual machine (EVM) is turing-complete
@@ -134,4 +134,17 @@ src: ./rollups_eth.md
 
 ---
 
-#  <logos-ethereum-color /> Phase 1 Ethereum Scaling
+# <logos-ethereum-color /> Phase 1 Ethereum Scaling
+according to the [rollup-centric ethereum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+
+- current Ethereum has ~ 15 TPS
+- moving to rollups can yield ~ 3000 TPS
+- utilizing sharded chains as rollup data storage will allow a theoretical max of **~ 100000 TPS**
+- _later phases will improve TPS even more..._
+
+<!--
+- die roadmap ist bereits relativ alt: Oktober 2020
+- ändert sich ständig
+- Zahlen sind häufig Schätzungen
+- **Allerdings**: es wird VIEL schneller
+-->

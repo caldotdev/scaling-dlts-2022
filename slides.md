@@ -86,6 +86,7 @@ layout: statement
 ### zkSNARKS
 - [Mathematics behind zkSNARKs](https://www.youtube.com/watch?v=iRQw2RpQAVc)
 - [ConsenSys Workshop](https://www.youtube.com/watch?v=Eva2lHFI_rI)
+- [Rollups on data sharded ETH2](https://ethresear.ch/t/rollups-on-a-data-sharded-ethereum-2-linking-the-data-availability-with-the-execution/8237)
 
 ---
 

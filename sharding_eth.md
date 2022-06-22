@@ -66,9 +66,9 @@ commonly used:
 - **epoch:** comprised of 32 slots
 - **attestation** consisting of
   * validator index
-  * vote for current [[beacon chain]] head
+  * vote for current beacon chain head
   * vote on which beacon block should be justified/finalized
-  * vote on the current state of the [[shard chain]]
+  * vote on the current state of the shard chain
   * signatures of all validators agreeing with that vote
 
 <!-- 
