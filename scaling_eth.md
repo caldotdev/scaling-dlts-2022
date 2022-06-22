@@ -46,7 +46,7 @@ image: ./img/eth_colorful.png
 - the Ethereum virtual machine (EVM) is turing-complete
 - inherently designed to force implementation of scaling solutions by the [**"difficulty bomb"**](https://ethereum.org/en/glossary/#difficulty-bomb)
 	- transition to POS
-  - reduce changes of fork
+  - reduce chances of fork
 
 
 ---

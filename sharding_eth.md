@@ -88,7 +88,8 @@ layout: statement
 <!-- 
 Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert werden müssen.
 
-- if every attestation needed to be verified by all other nodes we would've not gained much 
+- if every attestation needed to be verified by all other nodes we would've not gained much
+- **Übereinstimmung der Signaturen**
  -->
 
 ---
