@@ -3,12 +3,12 @@ layout: image
 image: ./img/sharding_eth.png
 ---
 
-# 🏃🏻 Sharding
+# <logos-ethereum-color /> Sharding
 
 
 ---
 
-# 🏃🏻 Sharding
+# <logos-ethereum-color /> Sharding
 - related to horizontal data partition
 - shared-nothing architecture
 	* shards are autonomous
@@ -43,7 +43,7 @@ commonly used:
 
 ---
 
-# 🏃🏻 Sharding through Random Sampling
+# <logos-ethereum-color /> Sharding through Random Sampling
 
 <br>
 <div class="container mx-auto flex flex-row justify-center">
@@ -58,7 +58,7 @@ commonly used:
 
 ---
 
-# 🏃🏻 Sharding Consensus
+# <logos-ethereum-color /> Sharding Consensus
 
 ### Important concepts
 - beacon chain
@@ -94,7 +94,7 @@ Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert 
 
 ---
 
-# 🏃🏻 Sharding Consensus
+# <logos-ethereum-color /> Sharding Consensus
 
 - shard & beacon chain votes should be identical across validators within the same committee
 - if we just had a way to combine all signatures... 🤷‍♂️
@@ -112,7 +112,7 @@ Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert 
 
 ---
 
-# 🦹🏻‍♂️ What about bad actors?
+# <logos-ethereum-color /> What about bad actors? 🦹🏻‍♂️
 
 - general assumption: committees represent the overall validator set (more or less 😅)
 - we try to prevent malicious validators from ending up in the same committee by..
@@ -123,13 +123,7 @@ Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert 
 
 ---
 
-# 🏃🏻 Quadratic Sharding
-include?..
-
-
----
-
-# 🏃🏻 Sharding Roadmap
+# <logos-ethereum-color /> Sharding Roadmap
 Ethereum 2.0
 - **Phase 0:** POS [beacon chain](https://ethereum.org/en/upgrades/beacon-chain/) without shards (shipped in 2020 🚀)
   * beacon chain contains logic to secure and sync shards
@@ -164,7 +158,7 @@ Ethereum 2.0
 
 ---
 
-# 🏃🏻 Quick Recap
+# <logos-ethereum-color /> Quick Recap
 
 _i.g.: splitting a database horizontally_
 - part multi-phase upgrade to improve scalability and capacity

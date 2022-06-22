@@ -12,6 +12,7 @@
     "slidev-theme-academic": "^1.0.0"
   },
   "devDependencies": {
+    "@iconify-json/logos": "^1.1.5",
     "playwright-chromium": "^1.22.2"
   }
 }

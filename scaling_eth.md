@@ -2,14 +2,16 @@
 layout: contained-image-right
 image: ./img/eth_colorful.png
 ---
-# 🏃🏻 Scaling Ethereum
+# Scaling Ethereum
+
+<br/>
 
 "Ethereum is a technology that lets you send cryptocurrency to anyone for a small fee. It also powers applications that everyone can use and no one can take down."
 
 ### It's the world's programmable blockchain.
 
 <!--
-- a technology with this much impact and use cases should be fast and cheap
+a technology with this much impact and use cases should be fast and cheap
 -->
 
 
@@ -18,10 +20,9 @@ layout: contained-image-right
 image: ./img/eth_colorful.png
 ---
 
-# 🏃🏻 Primer
+# Primer
 
-- public
-- permissionless
+- public & permissionless
 - decentralized
 - consensus mechanism: **Proof-Of-Work**
 - enables **Smart Contracts** using
@@ -40,7 +41,7 @@ layout: contained-image-right
 image: ./img/eth_colorful.png
 ---
 
-## 🏃🏻 Ethereum and Bitcoin
+## Ethereum and Bitcoin
 
 - inspired by Bitcoins *"underlying blockchain technology as a tool of distributed consensus"*
 - the Ethereum virtual machine (EVM) is turing-complete
@@ -48,10 +49,15 @@ image: ./img/eth_colorful.png
 	- transition to POS
   - reduce chances of fork
 
+<!--
+# Difficulty Bomb
+intentional and sudden increase in mining difficulty that will occur when ETH 2.0 and proof-of-work update is released to the Ethereum network
+-->
+
 
 ---
 
-## 🏃🏻 History
+## <logos-ethereum-color /> History
 ```mermaid
 gantt
     title Important Events for Scaling Ethereum
@@ -67,7 +73,7 @@ gantt
 ```
 
 ## Summary
-- turing-complete EVM enables pogrammable money
+- turing-complete EVM enables programmable money
 - scaling is forced by design
 - after multiple pushbacks the first step of the scaling vision went live (*Beacon Chain*)
 
@@ -89,14 +95,6 @@ gantt
 	- further pushback of the difficulty bomb
 	- ETH priced at $4111 USD leaving early investors at a 3315x
  -->
-
-<!--
-- L2
-- but keep in mind that it enforcement still happens on the blockchain itself
-  * deferral of state
-  * opening and closing of payment channels
--->
-
 
 ---
 
@@ -136,4 +134,4 @@ src: ./rollups_eth.md
 
 ---
 
-# Ethereum Scaling tl;dr
+#  <logos-ethereum-color /> Phase 1 Ethereum Scaling

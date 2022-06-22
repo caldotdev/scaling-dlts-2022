@@ -3,13 +3,13 @@ layout: image
 image: ./img/sharding_eth.png
 ---
 
-# 🏃🏻 Rollups
+# <logos-ethereum-color /> Rollups
 
 
 ---
 layout: two-cols
 ---
-# 🏃🏻 Rollups
+# <logos-ethereum-color /> Rollups
 
 perform transactions on layer 2 and post data to layer 1 once settled.
 
@@ -75,11 +75,11 @@ perform transactions on layer 2 and post data to layer 1 once settled.
 -->
 
 ---
-layout: statement
+layout: center
 ---
 # 🤔 Why does the bond get slashed?
 
-Instead of paying out the full amount to the challenger?
+_instead of paying out the full amount to the challenger..._
 
 <!-- 
 - Frage zur Verdeutlichung des Spieltheoretischen Ansatzes
@@ -119,7 +119,7 @@ includes an easily verifiable cryptographic **valididty** proof in every *batch*
 
 <br/>
 
-### **S**uccinct **N**on-interactive **A**rgument of **K**nowledge ⇢ **SNARKs**
+### **S**uccinct **N**on-interactive **AR**gument of **K**nowledge ⇢ **SNARKs**
 
 - based on [elliptic curves](https://curves.ulfheim.net/)
 - currently the main approach of Ethereum using the [PLONK](https://vitalik.ca/general/2019/09/22/plonk.html) protocol
@@ -340,7 +340,7 @@ _vergebt mir für die letzte Zeile: offensichtlich kein gültiges JS_
 
 ---
 
-# 👨🏻‍🏫 zkSNARK recap
+# 👨🏻‍🏫 Quick Recap
 
 - based on elliptic curves
 - enables **verifiers** to check knowledge of **prover** without the need to reveal the secret
@@ -360,7 +360,7 @@ _vergebt mir für die letzte Zeile: offensichtlich kein gültiges JS_
 
 ---
 
-# Rollups: ✨ Optimistic vs. zk ⛓
+# <logos-ethereum-color /> Rollups: ✨ Optimistic vs. zk ⛓
 
 | **Property** | **Optimistic Rollups** | **zk Rollups** |
 |---|---|---|

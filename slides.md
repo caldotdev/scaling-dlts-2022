@@ -32,11 +32,9 @@ src: ./motivation.md
 src: ./approaches.md
 ---
 
-
 ---
 src: ./scaling_bitcoin.md
 ---
-
 
 ---
 src: ./scaling_eth.md
@@ -46,6 +44,11 @@ src: ./scaling_eth.md
 ---
 
 # ❄️ Avalanche - Finding Consensus
+
+<br/>
+
+- [Homepage](https://www.avax.network/)
+- [Collection of Whitepapers](https://www.avalabs.org/whitepapers)
 
 ---
 layout: statement
@@ -86,7 +89,7 @@ layout: statement
 
 ---
 
-# Sources
+# Enter the rabbit hole 🕳 🐇
 - [Ethereum Illustrations](https://ethereum.org/en/assets/#illustrations)
 - [Avalanche Illustrations](https://support.avax.network/en/articles/4132288-ava-labs-and-avalanche-press-kit-and-brand-assets)
 - [Database Sharding Primer by Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
@@ -100,7 +103,3 @@ class: text-center
 ## Thank you for your attention!
 
 The presentation is available at `https://calwritescode.github.io/scaling-dlts-2022/`
-
-<!--
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
--->

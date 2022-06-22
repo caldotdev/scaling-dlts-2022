@@ -1,15 +1,15 @@
 ---
 layout: section
 ---
-# ⚡️ Scaling Bitcoin 
+# <logos-bitcoin /> Scaling Bitcoin 
 
 ![Illustration](/img/lightning_illustration.png)
 
 ---
 
-## ⚡️ Bitcoin Scaling Problem
+## <logos-bitcoin /> Scaling Problem
 - huge impact on the network if every node must know about every single transaction
-- Visa's 47,000 peak tps vs. &lt;7 tps <
+- Visa's 47,000 peak tps vs. &lt; 7 tps
 - 1MB block limit
 - increasing block size?
 - principal-agent problem
@@ -33,11 +33,47 @@ layout: section
 
 ---
 
-## ⚡️ Hashed Timelock Contract (HTLC)
+## ⚡️ tl;dr
+<br>
+<img src="/img/lightning_flowchart.png" class="h-70 rounded" />
+
+- opening and closing of payment channel is written on blockchain
+- timelocks (HTLC's) are used to ensure communication in the channels
+- enables fast and cheap Bitcoin payments down to the satoshi
+
+---
+layout: center
+---
+
+## Is the Lightning Network a L1 or L2 scaling solution?🤔
+
+<br/>
+<br/>
+
+<v-click>
+
+# L2
+
+</v-click>
+
+<style>
+
+  h1 {
+    text-align: center;
+  }
+
+</style>
+
+<!-- 
+- L2
+- but keep in mind that it enforcement still happens on the blockchain itself
+  * deferral of state
+  * opening and closing of payment channels
+ -->
 
 ---
 
-## ⚡️ Implications for Bitcoin
+## <logos-bitcoin /> Implications for Bitcoin
 The Lightning Network enables the following functionality for Bitcoin
 
 - Instant Transactions
@@ -72,33 +108,4 @@ The Lightning Network enables the following functionality for Bitcoin
 
 # Cross-Chain Payments
 - if hash function is similar across chains transactions could be routed across chains
- -->
-
----
-
-## ⚡️ tl;dr
-<br>
-<img src="/img/lightning_flowchart.png" class="h-70 rounded" />
-
-- opening and closing of payment channel is written on blockchain
-- timelocks (HTLC's) are used to ensure communication in the channels
-- enables fast and cheap Bitcoin payments down to the satoshi
-
----
-layout: statement
----
-
-## Is the Lightning Network a L1 or L2 scaling solution?🤔
-
-<v-click>
-
-L2
-
-</v-click>
-
-<!-- 
-- L2
-- but keep in mind that it enforcement still happens on the blockchain itself
-  * deferral of state
-  * opening and closing of payment channels
  -->

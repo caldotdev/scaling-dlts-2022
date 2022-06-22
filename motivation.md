@@ -1,11 +1,17 @@
 ---
-layout: contained-image-right
-image: ./blockchain_trilemma.png
+layout: two-cols
 ---
-
 # Motivation
 
-<br>
+<br/>
+
+- only adjacent edges of one side can be fulfilled
+- solving the trilemma could lead to new levels of adoption
+- multiple approaches to solve it or at least improve the current state
+
+[_read more_](https://www.ledger.com/academy/what-is-the-blockchain-trilemma)
+
+::right::
 
 ![DLT Trilemma](/img/blockchain_trilemma.png)
 
