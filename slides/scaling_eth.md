@@ -123,12 +123,12 @@ gantt
 
 
 ---
-src: ./sharding_eth.md
+src: ./slides/sharding_eth.md
 ---
 
 
 ---
-src: ./rollups_eth.md
+src: ./slides/rollups_eth.md
 ---
 
 

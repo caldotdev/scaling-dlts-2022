@@ -11,7 +11,7 @@ info: >
 
   Course website at [Uni
   Tübingen](http://ps.informatik.uni-tuebingen.de/teaching/ss22/blockchain/)
-title: Welcome to Scaling DLT's
+title: Scaling DLT's
 download: true
 ---
 
@@ -21,23 +21,23 @@ A short introduction for the *Blockchain Technology* Seminar SS22
 
 
 ---
-src: ./outline.md
+src: ./slides/outline.md
 ---
 
 ---
-src: ./motivation.md
+src: ./slides/motivation.md
 ---
 
 ---
-src: ./approaches.md
+src: ./slides/approaches.md
 ---
 
 ---
-src: ./scaling_bitcoin.md
+src: ./slides/scaling_bitcoin.md
 ---
 
 ---
-src: ./scaling_eth.md
+src: ./slides/scaling_eth.md
 ---
 
 
