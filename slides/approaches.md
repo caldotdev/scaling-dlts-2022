@@ -20,10 +20,15 @@ Any ideas?
 
 <!-- 
 # nesting vs. sidechains
+- getrenntert Konsensmechanismus
+vs.
+- "selbe chain nesten"
+
 # state channels
   - no open participation
   - lock up in multi-sig contract
    application specific
+
 # sidenchains
   - rollups utilize sidechains
  -->
@@ -56,6 +61,11 @@ layout: two-cols
 - sidechains
 - bundeling / rollups
 
+<!-- 
+- in zwei Kategorien
+- fallen euch Gemeinsamkeiten auf?
+-->
+
 ---
 layout: two-cols
 ---
@@ -70,7 +80,7 @@ layout: two-cols
 # Layer-2
 
 - protocols sitting on top of the L1 to increase scalability or add functionality
-- it comes down to **offloading effort off the chain**
+- it comes down to **offloading effort from the chain**
 - e.g. Optimism, Boba, Loopring..
 
 <!-- 

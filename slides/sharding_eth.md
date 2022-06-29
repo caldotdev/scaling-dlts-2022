@@ -1,10 +1,9 @@
 ---
 layout: image
-image: ./img/sharding_eth.png
+image: /img/sharding_eth.png
 ---
 
 # <logos-ethereum-color /> Sharding
-
 
 ---
 
@@ -12,14 +11,20 @@ image: ./img/sharding_eth.png
 - related to horizontal data partition
 - shared-nothing architecture
 	* shards are autonomous
-  * memory & storage is not shared between nodes 
+  * memory & storage is not shared between nodes
+
+<v-click>
+
 - adds complexity & potential failure points ⚠️
 
+</v-click>
+
 
 <br>
 <br>
 <br>
 
+<v-clicks>
 
 ### When to shard ? 🧐
 
@@ -27,10 +32,16 @@ image: ./img/sharding_eth.png
 - slowed response times due to volume of read/writes to single node
 - network bandwidth required is greater than the bandwidth available to a single node
 
+</v-clicks>
+
+
 <!--
 ![illustrations](/img/horizontal_partitioning.png)
--->
 
+- mehr Daten benötigt, als mit einem Node zu Verfügung zu stellen
+- Performanzverlust
+- Bandbreite
+-->
 
 ---
 
@@ -45,27 +56,28 @@ commonly used:
 
 # <logos-ethereum-color /> Sharding through Random Sampling
 
-<br>
 <div class="container mx-auto flex flex-row justify-center">
   <img src="/img/sharding_committees.png" class="bg-white p-2 rounded" />
 </div>
 <br>
 
+<v-click>
+
 - randomly split verification work
 - shuffle validator list and assign **committees** of size n to verify a block
 - each validator publishes a signature upon block validation
-- the network **only needs to verify the signatures** - less work
+
+</v-click>
 
 ---
 
 # <logos-ethereum-color /> Sharding Consensus
 
-### Important concepts
+### Important Definitions
 - beacon chain
 - **slot:** 12 second time-frame in which a block is expected to be added to the chain
 - **epoch:** comprised of 32 slots
 - **attestation** consisting of
-  * validator index
   * vote for current beacon chain head
   * vote on which beacon block should be justified/finalized
   * vote on the current state of the shard chain
@@ -77,20 +89,30 @@ commonly used:
 - assigns stakers to shards they need to work on
 - facilitates cross-shard communications
 - already went live
- -->
+
+![Collations](/img/sharding_collation.png)
+-->
 
 ---
-layout: statement
+layout: center
 ---
 
-# How can we use the properties of attestations within a committee in a clever way?
+# How can we use the properties of attestations within a committee in a clever way?🤔
+
+<style>
+
+  h1 {
+    text-align: center;
+  }
+
+</style>
 
 <!-- 
 Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert werden müssen.
 
 - if every attestation needed to be verified by all other nodes we would've not gained much
 - **Übereinstimmung der Signaturen**
- -->
+-->
 
 ---
 
@@ -103,7 +125,11 @@ Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert 
 
 <br>
 
+<v-click>
+
 ### Only 1 signature is stored for a **whole committee**
+
+</v-click>
 
 <!-- 
 - one epoch's worth of signatures: `33.6 megabytes` ⇢ `7.6 gigabytes/day`
@@ -114,12 +140,22 @@ Denkt an die vorher angedeutete Eigenschaft, dass nur die Signaturen verifizert 
 
 # <logos-ethereum-color /> What about bad actors? 🦹🏻‍♂️
 
+<v-clicks>
+
 - general assumption: committees represent the overall validator set (more or less 😅)
 - we try to prevent malicious validators from ending up in the same committee by..
   * ensuring random committee assignments
   * requiring a minimum number of validators per committee
 - it is quite unlikely for a bad actor to gain control over a committee
   - e.g. using 128 randomly sampled validator per committee leads to the probability of an attacker with $\frac{1}{3}$ of all validators getting a $>\frac{2}{3}$ committee of less than $2^{-40}$ [src](https://web.archive.org/web/20190504131341/https://vitalik.ca/files/Ithaca201807_Sharding.pdf)
+
+</v-clicks>
+
+<!-- 
+- grundsätzliche Annahme: Stichprobe der validator repräsentiert Grundgesamtheit
+- bad actors werden durch random assignment und minimum number davon abgehalten ins selbe committee zu kommen
+- bei 128 validator/committee ist die Wahrscheinlichkeit, dass ein Angreifer mit 1/3 der validator ein committee mit mehr als 2/3 validator bekommt kleiner als $2^{-40}$
+-->
 
 ---
 
@@ -161,7 +197,7 @@ Ethereum 2.0
 # <logos-ethereum-color /> Quick Recap
 
 _i.g.: splitting a database horizontally_
-- part multi-phase upgrade to improve scalability and capacity
+- part of multi-phase upgrade to improve scalability and capacity
 - for now shard chains provide _just_  storage layers - _you will learn how to use that in a clever way in a second_ 😏
 - committees of random validators approve blocks
 - validation results of several committees are combined in a way that only requires checking the signatures of all validators
@@ -169,6 +205,15 @@ _i.g.: splitting a database horizontally_
   - BLS signatures / zkSNARKs
 - **not only** a matter of **scaling** ⇢ improves security & decentralization of the network
 
+<!-- 
+- Teil eines mehrstufigen Upgrade-Plans
+  - scalability & capacity
+- momentan "nur" Speicher
+- Validationsergebnisse mehrerer committees werden kombiniert
+- nicht "NUR" scaling
+-->
+
+<br/>
 <v-click>
 
 ### Any questions or comments?

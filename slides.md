@@ -51,7 +51,7 @@ src: ./slides/scaling_eth.md
 - [Collection of Whitepapers](https://www.avalabs.org/whitepapers)
 
 ---
-layout: statement
+layout: center
 ---
 # Questions?
 
@@ -64,6 +64,9 @@ layout: statement
 - [Vitalik on 10.000x scaling Ethereum](https://www.youtube.com/watch?v=UuMOQAVpI2c)
 - [Designing Ethereum | Vitalik Buterin](https://youtu.be/-R0j5AMUSzA)
 - [Staking on eth2](https://blog.ethereum.org/2019/11/27/validated-staking-on-eth2-0/)
+- [Sharding & Finality](https://medium.com/@icebearhww/ethereum-sharding-and-finality-65248951f649)
+- [Why sharding is great: demystifying the technical properties](https://vitalik.ca/general/2021/04/07/sharding.html)
+- [Database Sharding Primer by Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
 
 ### Rollups
 - [An Incomplete Guide to Rollups | Vitalik Buterin](https://vitalik.ca/general/2021/01/05/rollup.html)
@@ -89,14 +92,6 @@ layout: statement
 - [Rollups on data sharded ETH2](https://ethresear.ch/t/rollups-on-a-data-sharded-ethereum-2-linking-the-data-availability-with-the-execution/8237)
 
 ---
-
-# Enter the rabbit hole 🕳 🐇
-- [Ethereum Illustrations](https://ethereum.org/en/assets/#illustrations)
-- [Avalanche Illustrations](https://support.avax.network/en/articles/4132288-ava-labs-and-avalanche-press-kit-and-brand-assets)
-- [Database Sharding Primer by Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
-- [Why sharding is great: demystifying the technical properties](https://vitalik.ca/general/2021/04/07/sharding.html)
-
----
 layout: center
 class: text-center
 ---
@@ -104,3 +99,9 @@ class: text-center
 ## Thank you for your attention!
 
 The presentation is available at `https://calwritescode.github.io/scaling-dlts-2022/`
+
+---
+
+# Illustrations
+- [Ethereum Illustrations](https://ethereum.org/en/assets/#illustrations)
+- [Avalanche Illustrations](https://support.avax.network/en/articles/4132288-ava-labs-and-avalanche-press-kit-and-brand-assets)

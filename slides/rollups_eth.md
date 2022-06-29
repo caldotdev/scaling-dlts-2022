@@ -1,44 +1,48 @@
 ---
 layout: image
-image: ./img/sharding_eth.png
+image: /img/rollup_eth.png
 ---
 
 # <logos-ethereum-color /> Rollups
 
+---
 
----
-layout: two-cols
----
 # <logos-ethereum-color /> Rollups
 
-perform transactions on layer 2 and post data to layer 1 once settled.
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-<v-click>
-
-## There are two distinctly different types of rollups:
-
-- optimistic ✨
-- zero-knowledge ⛓
-
-</v-click>
-
-::right::
-
-<div class="container mx-auto flex flex-row justify-center bg-white">
-    <img src="/img/rollup_schematic.png" class="m-3 h-40 rounded"/>
+<div class="container mx-auto flex flex-column justify-center bg-white py-4">
+    <img src="/img/rollup_schematic.png" class="h-60 rounded object-center"/>
 </div>
 
-### How does it work?
+<!-- 
+- on-chain smart contract speichert **state root**: *merkle root* des momentanen rollup Zustandes
+- jeder Netzwerkteilnehmer kann eine transaction **batch** veröffentlichen
+    * transactions highly compressed
+    * _**previous**_ state root
+    * _**next**_ state root
+-->
+
+---
+
+# <logos-ethereum-color /> Rollups
+
+perform transactions on Layer-2 and post data to Layer-1 once settled.
+
+### How do they work?
+
 - on-chain smart contract maintains **state root**: *merkle root* of the rollup state
 - anyone can publish a transaction **batch**
     * transactions highly compressed
     * _**previous**_ state root
     * _**next**_ state root
+
+<v-click>
+
+### There are two distinctly different types of rollups:
+
+- optimistic ✨
+- zero-knowledge ⛓
+
+</v-click>
 
 <!-- 
 # optimistic
@@ -56,6 +60,8 @@ perform transactions on layer 2 and post data to layer 1 once settled.
 
 # ✨ Optimistic Rollups
 
+<v-clicks>
+
 - sequencer certifies that computing `C` with input `X` leads to output `Y` ⇢ _"the transactions I validated are correct"_
     * provides a bond
 - **any** other party (**challenger**) can submit a **fraud proof** during a *dispute period* 🚨
@@ -65,6 +71,7 @@ perform transactions on layer 2 and post data to layer 1 once settled.
 - the loosing party's bond is slashed
 - if no one submits a **fraud proof** transactions are considered final after the *dispute period* is over
 
+</v-clicks>
 
 <!-- 
 - basiert auf Unschuldsvermutung
@@ -110,6 +117,8 @@ includes an easily verifiable cryptographic **valididty** proof in every *batch*
 
 # ⛓ zk Rollups
 
+<v-clicks>
+
 ### **S**calable **T**ransparent **A**rgument of **K**nowledge ⇢ **STARKs**
 - rely on hash functions ⇢ quantum resistant
 - don't require trusted set-up
@@ -117,7 +126,11 @@ includes an easily verifiable cryptographic **valididty** proof in every *batch*
     * more time to verify
     * higher gas fees (up to 24\%)
 
+</v-clicks>
+
 <br/>
+
+<v-clicks>
 
 ### **S**uccinct **N**on-interactive **AR**gument of **K**nowledge ⇢ **SNARKs**
 
@@ -127,9 +140,25 @@ includes an easily verifiable cryptographic **valididty** proof in every *batch*
 
 [_read more about the differences & advantages_](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 
+</v-clicks>
+
+<!-- 
+#STARKs
+- verwenden hash Funktionen
+- benötigen kein Trusted-Setup: ⚠️ lambda
+- größer
+
+#SNARKs
+- basieren auf elliptischen Kurven
+  - sehr cooler Link
+  - main approach
+-->
+
 ---
 
 # 🥜 [zkSNARKs in a nutshell](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
+
+<v-clicks>
 
 - **S**uccinct
     * message sizes are really small in comparison to the actual computation
@@ -142,6 +171,8 @@ includes an easily verifiable cryptographic **valididty** proof in every *batch*
 - **K**nowledge
     * impossible for prover to construct a proof w/o a witness
     * e.g. address, path to Merkle-tree node,...
+
+</v-clicks>
 
 <!-- 
 - ARguments: mit genug Rechenleistung kann jede public-Key Verschlüsselung gebrochen werden
@@ -320,27 +351,27 @@ function C(x, w) {
 }
 
 (pk, vk) = G(C, lambda);
-prf = P(pk, H, s);
+prf = P(pk, H, w);
 result = V(vk, H, prf) ? 'Alice is a lier 🚫' : 'Alice knows the secret 🔓';
 
-'Alice knows the secret 🔓'
+// 'Alice knows the secret 🔓'
 ```
 
 <!-- 
 - Bob erstellt den _proving key_ und den _verification key_ mit dem Generator
 - Alice darf auf keinen Fall lamda erfahren
 - Alice erstellt einen Beweis mit dem proof Algorithmus
-    * sie will beweisen, dass sie den Wert $s$ kennt, der gehashed $H$ ergibt
+    * sie will beweisen, dass sie den Wert `w` kennt, der gehashed `H` ergibt
 - Alice zeigt Bob den Beweis
     * er verifiziert den Beweis mit `V`
-- Alice war ehrlich und konnte Bob beweisen, dass sie $s$ kennt, ohne ihm $s$ zu sagen
-
-_vergebt mir für die letzte Zeile: offensichtlich kein gültiges JS_
+- Alice war ehrlich und konnte Bob beweisen, dass sie `w` kennt, ohne ihm `w` zu zeigen
 -->
 
 ---
 
 # 👨🏻‍🏫 Quick Recap
+
+<v-clicks>
 
 - based on elliptic curves
 - enables **verifiers** to check knowledge of **prover** without the need to reveal the secret
@@ -350,6 +381,8 @@ _vergebt mir für die letzte Zeile: offensichtlich kein gültiges JS_
     * checking $t(s) h(s)=w(s) v(s)$ is identical to checking $t(s) h(s) k=w(s) v(s) k$
 - currently on the roadmap to be utilized by Ethereum
 - there are alternatives and plenty of different implementations (STARKs, PLONK,...)
+
+</v-clicks>
 
 <!--
 - Verschlüsselung als quadratische Gleichung

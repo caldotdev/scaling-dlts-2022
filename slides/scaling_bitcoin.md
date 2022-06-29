@@ -7,7 +7,7 @@ layout: section
 
 ---
 
-## <logos-bitcoin /> Scaling Problem
+# <logos-bitcoin /> Scaling Problem
 - huge impact on the network if every node must know about every single transaction
 - Visa's 47,000 peak tps vs. &lt; 7 tps
 - 1MB block limit
@@ -28,18 +28,31 @@ layout: section
 - higher block size -> less people have the necessary bandwidth & hardware
 - centralization; blockchain trilemma
 - decentralization advantages NEED to be conserved
-- large miners are encourage to act on their own interests even more...
+- large miners are encourage to act on their own interests
+- PAP: Konflikt zwischen Verhalten der Representanten einer Gruppe und den Interessen der Gruppe selbst
+- even more...
+
 -->
 
 ---
 
-## ⚡️ tl;dr
+# ⚡️ tl;dr
 <br>
 <img src="/img/lightning_flowchart.png" class="h-70 rounded" />
+
+<v-clicks>
 
 - opening and closing of payment channel is written on blockchain
 - timelocks (HTLC's) are used to ensure communication in the channels
 - enables fast and cheap Bitcoin payments down to the satoshi
+
+</v-clicks>
+
+<!-- 
+# Satoshi
+- kleinste Einheit von Bitcoin
+- 1 satoshi = 0.00000001
+-->
 
 ---
 layout: center
@@ -73,7 +86,7 @@ layout: center
 
 ---
 
-## <logos-bitcoin /> Implications for Bitcoin
+# <logos-bitcoin /> Implications for Bitcoin
 The Lightning Network enables the following functionality for Bitcoin
 
 - Instant Transactions
@@ -96,7 +109,7 @@ The Lightning Network enables the following functionality for Bitcoin
 - current incentive to hold funds on exchanges
 - massive cold storages for exchanges might not longer be necessary (I disagree)
   * Lightning isn't for large payments
-  * institutions & whales  *exist*
+  * institutions & whales *exist*
               
 # Micropayments
 - no 3rd party custodian needed anymore
